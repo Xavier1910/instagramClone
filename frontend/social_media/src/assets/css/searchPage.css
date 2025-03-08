@@ -1,0 +1,234 @@
+
+.searchPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #121212;
+    height: 700px;
+    width: 800px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: #333;
+    overflow-y: scroll;
+    position: relative;
+    left: 10%;
+}
+
+.searchPageInput {
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    position: fixed;
+    z-index: 1;
+}
+
+.searchPageInput::placeholder {
+    color: #888;
+}
+
+.searchPageResults {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchPageUserCard {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.searchPageUserCard:hover {
+    transform: scale(1.05);
+}
+
+.searchPageUserImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #fff;
+}
+
+.searchPageUsername {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+.modalContent {
+    background: #222;
+    width: 50%;
+    height: 40%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transform: scale(0);
+    animation: modalAppear 0.3s forwards;
+}
+
+.modalUserImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.MainProfileDetails{
+    margin-top: 10px;
+    margin-left: 5%;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
+.UserProfile{
+    text-align: left;
+    width: 350px;
+}
+.modalUsername {
+    color: var(--text);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.modalBio {
+    color: var(--text);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modalAppear {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.searchProfilePageStats{
+    width: 300px;
+    margin: 50px auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    color: var(--text);
+}
+
+.searchProfilePageStatItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.searchProfilePageStatItem strong {
+    font-size: 30px;
+}
+.searchProfilePageStatItem span {
+    font-size: 16px;
+    color: #9f9d9d;
+}
+#FollowButton{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.followButton,.followingButton  {
+    width: 150px;
+    height: 40px;
+    padding: 10px 15px;
+    background-color: var(--pc1);
+    color: var(--text);
+    text-shadow: 2px 2px 1px black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+  }
+  .followButton:hover {
+    background-color: var(--pc2);
+  }
+  .followingButton {
+    background-color: transparent !important;
+    border: 1px solid var(--pc1);
+  }
+  
+  .followingButton:hover {
+    transform: scale(1.05);
+    background-color: transparent;
+  }
+
+  #SearchNoResult{
+    color: var(--text);
+    text-shadow: 1px 1px 1px black;
+  }
+
+
+  .SearchIcon {
+    position: absolute;
+    right: 75px;
+    top: 35px;
+    font-size: 1.7rem;
+    z-index: 9999;
+  }
+  
+  .spinner {
+    color: var(--pc3); 
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

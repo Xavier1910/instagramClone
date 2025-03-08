@@ -1,0 +1,167 @@
+.postContainer {
+    position: relative;
+    left: 10%;
+    background-color: #121212;
+    color: var(--pc2);
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+.postTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.postForm {
+    display: flex;
+    flex-direction: column;
+}
+.postFileInput{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--Secondary2);
+    opacity: 0;
+    width: 75%;
+    height: 470px;
+    z-index: 1;
+}
+.postInputField, .postTextArea, .postFileInput, .postSubmitButton {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+.postInputField, .postTextArea {
+    background-color: #222;
+    color: var(--text);
+}
+
+.postSubmitButton {
+    background-color: var(--pc1);
+    color: var(--text);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.postSubmitButton:hover {
+    background-color: #e64a19;
+}
+.MediaArea{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.MediaInputBox{
+    position: relative;
+    border-right: 1px solid var(--hover);
+    display: flex;
+    justify-content: center;
+}
+.FileInputIcon{
+    font-size: 150px;
+    color: var(--Secondary3);
+    margin-right: 10px;
+    background-color: var(--Secondary2);
+    height: 470px;
+    width: 75%;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.FileInputIconText{
+    font-size: 18px;
+    color: var(--text);
+}
+.postMediaPreview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.postMediaItem {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+}
+
+
+.customCarousel {
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    height: 470px;
+    padding: 10px;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .carouselItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .carouselItem img,
+  .carouselItem video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .removeMedia {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carouselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .carouselButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }

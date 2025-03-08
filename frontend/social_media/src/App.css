@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lobster&display=swap');
+
+:root{
+    --bgColor:rgb(0, 2, 8);
+    --primary:rgb(21, 21, 21);
+    --secondary:rgb(207, 207, 207);
+    --Secondary2:#333;
+    --Secondary3:#1b1b1b;
+    --text:white;
+    --text2:rgb(180, 180, 180);
+    --hover:rgb(82, 81, 81);
+    --pc1:#610C9F;
+    --pc2:#940B92;
+    --pc3:#DA0C81;
+    --pc4:#ff0000;
+    --error:rgb(246, 48, 48);
+    --errorHover:rgb(141, 0, 0);
+    --success:rgb(3, 185, 3);
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    width: 100dvw;
+    background-color: black;
+    overflow: hidden;
+}
+input:-webkit-autofill {
+    background-color: var(--Secondary2) !important;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #000 !important; 
+  }
+  
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active {
+    background-color: var(--Secondary2)  !important;
+    -webkit-box-shadow: 0 0 0px 1000px var(--Secondary2)  inset !important;
+    -webkit-text-fill-color: var(--text) !important;
+  }

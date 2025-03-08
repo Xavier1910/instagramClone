@@ -1,0 +1,97 @@
+.SidebarContainer {
+    position: fixed;
+    top: 0;
+    height: 96.2dvh;
+    width: 15%;
+    padding: 15px;
+    background-color: var(--primary);
+}
+.SideHead {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.SideHead img{
+    width: 70px;
+    height: 60px;
+}
+.TitleHead{
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    /* text-shadow: 1px 1px 1px black; */
+    color: var(--text);
+    font-size: 40px;   
+    background: rgb(97,12,159);
+    background: linear-gradient(111deg, rgba(97,12,159,1) 58%, rgba(233,87,147,1) 75%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.TitleHead-He{
+    text-decoration: underline;
+}
+.sidebar{
+    height: 55%;
+}
+.sidebarItem{
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text);
+    text-shadow: 1px 1px 1px black;
+}
+.sidebarItem ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebarItem ul .sidebarIcon,.sideFootItem .sideFootIcon{
+    padding: 0 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+.sidebarItem ul .sidebarIcon .sidebarTitle,.sideFootItem .sideFootIcon .sideFootTitle{
+    position: relative;
+    left: 15px;
+    font-size: 20px;
+}
+.sidebarItem ul .sidebarIcon:hover,.sideFootItem .sideFootIcon:hover{
+    background-color: var(--hover);
+    border-radius: 4px;
+    
+}
+.sidebarFooter{
+    width: 100%;
+    height: 17%;
+    position: relative;
+    top: 12%;
+    border-top: 1px solid var(--secondary);
+}
+.sideFootBottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+.sideFootItem{
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+    transition: background-color 0.3s ease;
+    color: var(--secondary);
+}
+
+  
+ .Active {
+    background-color: var(--hover);
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  

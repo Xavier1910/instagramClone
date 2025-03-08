@@ -1,0 +1,155 @@
+.UserPostMainContainer {
+    position: relative;
+    left:17%;
+    width: 80%;
+    height: 95dvh;
+    padding: 20px;
+    overflow-y: scroll;
+    animation: show 0.5s ease-in-out;
+    
+}
+.UserPostContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    gap: 20px; 
+}
+.UserPostCard {
+    width: 75%;
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--Secondary2);
+    margin: 50px auto;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(221, 221, 221, 0.23) 0px 3px 6px;  
+  }
+  
+  .UserPostHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--text);
+  }
+  
+  .UserPostHeader .username {
+    font-size: 16px;
+  }
+  
+  .UserPostHeader .date {
+    font-size: 12px;
+    color: var(--text);
+  }
+  
+  .UserPostMedia {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+  }
+  
+  .UserPostMedia img,
+  .UserPostMedia video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .UserPostDescription {
+    padding: 10px;
+    color: var(--text);
+  }
+  
+  .UserPostDescription button {
+    border: none;
+    background: none;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .userPostFooter {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .UserPostEditButton,.UserPostDeleteButton  {
+    margin: 0 auto;
+    width: 120px;
+      
+    padding: 10px 15px;
+    background-color: var(--pc1);
+    color: var(--text);
+    text-shadow: 1px 1px 1px black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .UserPostEditButton:hover {
+    background-color: var(--pc2);
+  }
+  .UserPostDeleteButton {
+    background-color: var(--error);
+
+  }
+  
+  .UserPostDeleteButton:hover {
+    background-color: var(--errorHover);
+  }
+
+.UserPostCarousel {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  /* padding: 10px; */
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.userPostCarouselItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.userPostCarouselItem img,
+.userPostCarouselItem video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+.userPostCarouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: rgb(110, 110, 110);
+  text-shadow: 1px 1px 1px black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+
+.userPostCarouselButton .prev {
+  left: 10px;
+}
+
+.userPostCarouselButton .next {
+  right: 10px;
+}
