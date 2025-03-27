@@ -19,6 +19,7 @@ const Login = () => {
   const [errors, setErrors] = useState({});
   const [usernameAvailable, setUsernameAvailable] = useState(null);
   const [loading, setLoading] = useState(false); 
+
   const validateField = (name, value) => {
     let tempErrors = { ...errors };
 
@@ -78,6 +79,8 @@ const Login = () => {
 
   useEffect(() => {
     if (!formData.isLogin && formData.username) {
+      console.log(formData.username);
+      
       checkUsername(formData.username);
     }
   }, [formData.username, formData.isLogin, checkUsername]);

@@ -21,7 +21,7 @@ export const loginUser = async (loginData) => {
 };
 export const checkUsernameAvailability = async (username) => {
   try {
-    const response = await axios.get(`${API_URL}/check-username`, {
+    const response = await axios.get(`${API_URL}/users/check-username`, {
       params: { username },
     });
     return response.data.exists;
